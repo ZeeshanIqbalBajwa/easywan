@@ -1,301 +1,724 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <title>easyWAN</title>
-   </head>
-   <body>
-      <section class="main-wrapper">
-         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="assets/images/logo-color.png" class="img-fluid logo" alt="" loading="lazy"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <title>easyWAN</title>
+</head>
+
+<body>
+   <section class="main-wrapper">
+      <div class="header" style="width: 100%; position: relative;height: fit-content;">
+         <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#"><img src="assets/images/logo-color.png" class="img-fluid logo" alt=""
+                     loading="lazy"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
                   <span><i class="fas fa-bars"></i></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                           <a class="nav-link" href="#features">TECHNOLOGY</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#about">PRODUCTS</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#pricing">SOLUTIONS</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="blog.html">COMPANY</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#contact">PARTNERS</a>
-                        </li>
-                     </ul>
-                     <div>
-                        <a href="#" class="btncst">
-                           <svg width="200" height="45">
-                              <defs>
-                                 <linearGradient id="grad1">
-                                    <stop offset="0%" stop-color="#2b963f"/>
-                                    <stop offset="100%" stop-color="#3b4d9a" />
-                                 </linearGradient>
-                              </defs>
-                              <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="180" height="35"></rect>
-                           </svg>
-                           <!--<span>Voir mes réalisations</span>-->
-                           <span>Why easyWAN ?</span>
-                        </a>
-                     </div>
-                     <!-- <a type="button" class="btn bttn">Request Demo</a> -->
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#features">TECHNOLOGY</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#about">PRODUCTS</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#pricing">SOLUTIONS</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">COMPANY</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">PARTNERS</a>
+                     </li>
+                  </ul>
+                  <div>
+                     <a href="#" class="btncst">
+                        <svg width="200" height="45">
+                           <defs>
+                              <linearGradient id="grad1">
+                                 <stop offset="0%" stop-color="#2b963f" />
+                                 <stop offset="100%" stop-color="#3b4d9a" />
+                              </linearGradient>
+                           </defs>
+                           <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="180" height="35"></rect>
+                        </svg>
+                        <!--<span>Voir mes réalisations</span>-->
+                        <span>Why easyWAN ?</span>
+                     </a>
+                  </div>
+                  <!-- <a type="button" class="btn bttn">Request Demo</a> -->
+               </div>
+            </div>
+         </nav>
+      </div>
+      <section class="slider">
+         <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active" data-bs-interval="3000">
+                  <img
+                     src="https://static.wixstatic.com/media/801386_3c965cff839b414697b0db6988dbb19e~mv2.jpg/v1/fill/w_1606,h_553,al_c,q_85,usm_0.66_1.00_0.01/801386_3c965cff839b414697b0db6988dbb19e~mv2.webp"
+                     class="img" alt="...">
+                  <div class="carousel-caption d-md-block" data-aos="fade-left" data-aos-duration="1000">
+                     <h1>Lorem Ipsum <br>Lorem Ipsum</h1>
+                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                     <a type="button" class="btn bttn">Read More</a>
                   </div>
                </div>
-            </nav>
-         </div>
-         <section class="slider">
-            <div id="carouselExampleDark" class="carousel carousel-fade slide" data-bs-ride="carousel">
-               <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                     src="https://static.wixstatic.com/media/801386_6ff20c1095dd43c2a76e1820d521b12a~mv2.png/v1/fill/w_1606,h_553,al_c,q_90,usm_0.66_1.00_0.01/801386_6ff20c1095dd43c2a76e1820d521b12a~mv2.webp"
+                     class="img" alt="...">
+                  <div class="carousel-caption d-md-block" data-aos="fade-left" data-aos-duration="1000">
+                     <h1>Lorem Ipsum <br>Lorem Ipsum</h1>
+                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                     <a type="button" class="btn bttn">Read More</a>
+                  </div>
                </div>
-               <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="1000">
-                     <img src="https://static.wixstatic.com/media/801386_3c965cff839b414697b0db6988dbb19e~mv2.jpg/v1/fill/w_1606,h_553,al_c,q_85,usm_0.66_1.00_0.01/801386_3c965cff839b414697b0db6988dbb19e~mv2.webp" class="img" alt="...">
-                     <div class="carousel-caption d-md-block"  data-aos="fade-left"  data-aos-duration="1000">
-                        <h1>Introducing<br>My Connect</h1>
-                        <h4>Pellentesque fermentum eros varius domattise and numbai posuereting lectus.</h4>
-                        <a type="button" class="btn bttn">Read More</a>
-                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1000">
-                     <img src="https://static.wixstatic.com/media/801386_6ff20c1095dd43c2a76e1820d521b12a~mv2.png/v1/fill/w_1606,h_553,al_c,q_90,usm_0.66_1.00_0.01/801386_6ff20c1095dd43c2a76e1820d521b12a~mv2.webp" class="img" alt="...">
-                     <div class="carousel-caption d-md-block" data-aos="fade-left"  data-aos-duration="1000">
-                        <h1>Introducing<br>My Connect</h1>
-                        <h4>Pellentesque fermentum eros varius domattise and numbai posuereting lectus.</h4>
-                        <a type="button" class="btn bttn">Read More</a>
-                     </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="1000">
-                     <img src="https://static.wixstatic.com/media/801386_a9fe58849977467dafb8503753a56978~mv2.jpg/v1/fill/w_1606,h_553,al_c,q_85,usm_0.66_1.00_0.01/801386_a9fe58849977467dafb8503753a56978~mv2.webp" class="img" alt="...">
-                     <div class="carousel-caption d-md-block" data-aos="fade-left"  data-aos-duration="1000">
-                        <h1>Introducing<br>My Connect</h1>
-                        <h4>The simple, powerful and secure way for remote workers to access the corporate SD-WAN</h4>
-                        <a type="button" class="btn bttn">Read More</a>
-                     </div>
+               <div class="carousel-item" data-bs-interval="3000">
+                  <img
+                     src="https://static.wixstatic.com/media/801386_a9fe58849977467dafb8503753a56978~mv2.jpg/v1/fill/w_1606,h_553,al_c,q_85,usm_0.66_1.00_0.01/801386_a9fe58849977467dafb8503753a56978~mv2.webp"
+                     class="img" alt="...">
+                  <div class="carousel-caption d-md-block" data-aos="fade-left" data-aos-duration="1000">
+                     <h1>Lorem Ipsum <br>Lorem Ipsum</h1>
+                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                     <a type="button" class="btn bttn">Read More</a>
                   </div>
                </div>
             </div>
-            <div id="Carousel" class="carousel slide carousel-fade col-lg-8 col-offset-2">
+         </div>
+         <div id="Carousel" class="carousel slide carousel-fade col-lg-8 col-offset-2">
             <ol class="carousel-indicators">
                <li data-target="Carousel" data-slide-to="0" class="active"></li>
                <li data-target="Carousel" data-slide-to="1"></li>
                <li data-target="Carousel" data-slide-to="2"></li>
             </ol>
-         </section>
-         <!--------------our mission--------------->
-         <section class="our_mission" id="about">
+      </section>
+
+      <section class="welcome  text-center">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-10 col-md-6">
+                  <h3 class="color-primary fs-2 fs-lg-3">Welcome to easyWAN</h3>
+                  <p class="px-lg-4 t-gray mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+               </div>
+            </div>
             <div class="row">
-               <div class="col-md-6">
-                  <div class="box1" data-aos="fade-right"  data-aos-duration="1000">
-                     <img src="https://static.wixstatic.com/media/801386_9172f4e39b404c7f86200d7cb9fda3e8~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01/adaptv_sd_wan.webp" class="img-fluid">                        
+               <div class="col-sm-6 box col-lg-3 mt-4" data-zanim-timeline="{&quot;delay&quot;:0.1}">
+                  <div class="background-11 radius-round mx-auto d-flex align-items-center"
+                     data-zanim="{&quot;delay&quot;:0}"
+                     style="height: 50px; width: 50px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                        class="text-black far fa-chart-bar fs-3 color-blueish mx-auto fw-600"></span></div>
+                  <h5 class="mt-3 t-blue" data-zanim="{&quot;delay&quot;:0.1}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum</h5>
+                  <p class="mb-0 mt-3 t-gray px-3" data-zanim="{&quot;delay&quot;:0.2}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of the
+                     printing and typesetting </p>
+               </div>
+               <div class="col-sm-6 box col-lg-3 mt-4" data-zanim-timeline="{&quot;delay&quot;:0.1}">
+                  <div class="background-11 radius-round mx-auto d-flex align-items-center"
+                     data-zanim="{&quot;trigger&quot;:&quot;scroll&quot;}"
+                     style="height: 50px; width: 50px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                        class="text-black far fa-clock fs-3 color-blueish mx-auto fw-600"></span></div>
+                  <h5 class="mt-3 t-blue" data-zanim="{&quot;delay&quot;:0.1}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum</h5>
+                  <p class="mb-0 mt-3 t-gray px-3" data-zanim="{&quot;delay&quot;:0.2}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of the
+                     printing and typesetting </p>
+               </div>
+               <div class="col-sm-6 box col-lg-3 mt-4" data-zanim-timeline="{&quot;delay&quot;:0.1}">
+                  <div class="background-11 radius-round mx-auto d-flex align-items-center"
+                     data-zanim="{&quot;trigger&quot;:&quot;scroll&quot;}"
+                     style="height: 50px; width: 50px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                        class="text-black far fa-lightbulb fs-3 color-blueish mx-auto fw-600"></span></div>
+                  <h5 class="mt-3 t-blue" data-zanim="{&quot;delay&quot;:0.1}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum</h5>
+                  <p class="mb-0 mt-3 t-gray px-3" data-zanim="{&quot;delay&quot;:0.2}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of the
+                     printing and typesetting </p>
+               </div>
+               <div class="col-sm-6 box col-lg-3 mt-4" data-zanim-timeline="{&quot;delay&quot;:0.1}">
+                  <div class="background-11 radius-round mx-auto d-flex align-items-center"
+                     data-zanim="{&quot;trigger&quot;:&quot;scroll&quot;}"
+                     style="height: 50px; width: 50px; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                        class="text-black fas fa-headset fs-3 color-blueish mx-auto fw-600"></span></div>
+                  <h5 class="mt-3 t-blue" data-zanim="{&quot;delay&quot;:0.1}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum</h5>
+                  <p class="mb-0 mt-3 t-gray px-3" data-zanim="{&quot;delay&quot;:0.2}"
+                     style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of the
+                     printing and typesetting </p>
+               </div>
+            </div>
+            <!--/.row-->
+         </div>
+         <!--/.container-->
+      </section>
+
+      <section class="why_choose program">
+         <div class="container">
+            <div class="row mb-6">
+               <div class="col">
+                  <h3 class="text-center fs-2 fs-lg-3">Why Choose easyWAN</h3>
+               </div>
+            </div>
+            <div class="row mt-5">
+               <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000"><img
+                     src="https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_limit,h_384,dpr_3/https://assets.app.engoo.com/images/0vtnxYB4iBCfXp9xpKMg8N.jpeg"
+                     class="img-fluid" alt=""></div>
+               <div class="col-lg-6 mt-6 mt-lg-0" data-aos="fade-left" data-aos-duration="1000"
+                  data-zanim-timeline="{}">
+                  <div class="overflow-hidden">
+                     <div class="ms-5 px-sm-0" data-zanim="{&quot;delay&quot;:0}"
+                        style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <h5 class="fs-0 fs-lg-1 text-white"><span
+                              class="ion-chatbubble-working fs-2 icon-position-fix fw-800"></span>We Are Professional
+                        </h5>
+                        <p class="t-gray fs-6 px-lg-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                     </div>
+                  </div>
+                  <div class="overflow-hidden">
+                     <div class="ms-5 px-sm-0" data-zanim="{&quot;delay&quot;:0.1}"
+                        style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <h5 class="fs-0 fs-lg-1 text-white"><span
+                              class="ion-android-color-palette fr-2 icon-position-fix fw-800"></span>We Are Creative
+                        </h5>
+                        <p class="t-gray fs-6 px-lg-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                     </div>
+                  </div>
+                  <div class="overflow-hidden">
+                     <div class="ms-5 px-sm-0" data-zanim="{&quot;delay&quot;:0.2}"
+                        style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <h5 class="fs-0 fs-lg-1 text-white"><span
+                              class="ion-ios-timer fs-2 mr-2 icoition-fix fw-600"></span>24/7 Great Support</h5>
+                        <p class="t-gray fs-6 px-lg-3">Lorem Ipsum is simply dummy text of the printing and typesetting
+                           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,e you.
+                        </p>
+                     </div>
                   </div>
                </div>
-               <div class="col-md-6 member_info">
-                  <div class="box2" data-aos="fade-left"  data-aos-duration="1000">
-                     <h4>WHAT WE DO</h4>
-                     <h2 class="title">Cloud-managed<br>SD-WAN</h2>
-                     <p class="para">Our SD-WAN solutions enable businesses of all sizes to realize the benefits of digital transformation with reliable, agile and efficient cloud connectivity.</p>
+            </div>
+            <!--/.row-->
+         </div>
+         <!--/.container-->
+      </section>
+
+
+      <section class="our_services scroll_anim" style="background-color: #fafafa!important;">
+         <div class="container">
+            <h3 class="text-center mb-5 fs-2 fs-md-3">Our Services</h3>
+            <div class="row no-gutters mt-6" style="position: relative;">
+               <div class="elixir-caret d-none d-lg-block"></div>
+               <div class="col-lg-6 py-3 px-lg-0 py-lg-0 mb-0" style="min-height:400px;">
+                  <div style="height:100%">
+                     <img src="https://miro.medium.com/max/1187/1*IQdJfacKYjGRWGJgGYpMOA.jpeg" class="img-fluid">
                   </div>
+                  <!--/.background-holder-->
+               </div>
+               <div
+                  class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
+                  <div class="d-flex align-items-center member_info h-100">
+                     <div data-zanim-timeline="{}">
+                        <div class="overflow-hidden">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy</h5>
+                        </div>
+                        <div class="overflow-hidden">
+                           <p class="mt-3 t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text
+                              of the printing and typesetting
+                              industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,e
+                              you.</p>
+                        </div>
+                        <div class="overflow-hidden">
+                           <div data-zanim="{&quot;delay&quot;:0.2}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <a class="d-flex t-green align-items-center" href="#">
+                                 Learn More
+                                 <div class="overflow-hidden ml-2"><span class="d-inline-block ms-2"
+                                       data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                       style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">⟶</span></div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row no-gutters pos-relative mt-4 mt-lg-0" style="position: relative;">
+               <div class="elixir-caret d-none d-lg-block"></div>
+               <div class="col-lg-6 py-3 py-lg-0 px-lg-0 mb-0 order-lg-2" style="min-height:400px;">
+                  <div style="height:100%">
+                     <img
+                        src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/06/19/15/working-lunch.jpg?width=640&auto=webp&quality=75"
+                        class="img-fluid">
+                  </div>
+                  <!--/.background-holder-->
+               </div>
+               <div
+                  class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
+                  <div class="d-flex align-items-center member_info h-100">
+                     <div data-zanim-timeline="{}">
+                        <div class="overflow-hidden">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy</h5>
+                        </div>
+                        <div class="overflow-hidden">
+                           <p class="mt-3 t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text
+                              of the printing and typesetting
+                              industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,e
+                              you.</p>
+                        </div>
+                        <div class="overflow-hidden">
+                           <div data-zanim="{&quot;delay&quot;:0.2}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <a class="d-flex t-green align-items-center" href="#">
+                                 Learn More
+                                 <div class="overflow-hidden ml-2"><span class="d-inline-block ms-2"
+                                       data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                       style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">⟶</span></div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row no-gutters pos-relative mt-4 mt-lg-0" style="position: relative;">
+               <div class="elixir-caret d-none d-lg-block"></div>
+               <div class="col-lg-6 py-3 py-lg-0 px-lg-0 mb-0" style="min-height:400px;">
+                  <div style="height:100%">
+                     <img
+                        src="http://www.smart-office.net/wp-content/uploads/2018/05/Pracownik-obs%C5%82ugi-biurowej-1024x682-1024x585.jpg"
+                        class="img-fluid">
+
+                  </div>
+                  <!--/.background-holder-->
+               </div>
+               <div
+                  class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 bg-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
+                  <div class="d-flex align-items-center member_info h-100">
+                     <div data-zanim-timeline="{}">
+                        <div class="overflow-hidden">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy</h5>
+                        </div>
+                        <div class="overflow-hidden">
+                           <p class="mt-3 t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text
+                              of the printing and typesetting
+                              industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,e
+                              you.</p>
+                        </div>
+                        <div class="overflow-hidden">
+                           <div data-zanim="{&quot;delay&quot;:0.2}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                              <a class="d-flex t-green align-items-center" href="#">
+                                 Learn More
+                                 <div class="overflow-hidden ml-2"><span class="d-inline-block ms-2"
+                                       data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                       style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">⟶</span></div>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.row-->
+         </div>
+         <!--/.container-->
+      </section>
+
+
+
+
+
+      <!--------------our mission--------------->
+      <section class="our_mission container" id="about">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="box2" data-aos="fade-left" data-aos-duration="1000">
+                  <h4>WHAT WE DO</h4>
+                  <h2 class="title">Lorem Ipsum</h2>
+                  <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                     has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                     galley of type and scrambled it to make a type specimen book.</p>
                   <a type="button" class="btn bttn">Learn More</a>
                </div>
+
             </div>
-         </section>
-         <section class="program">
-            <div class="container" data-aos="fade-up"  data-aos-duration="1000">
-               <h2 class="title mb-3">Adaptiv Partner Program</h2>
-               <h4>
-               We help Service Providers and Resellers<br>kickstart their business growth with Managed SD-WAN</p>
-               <div class="mt-5">
-                  <a type="button" class="btn bttn">Beacome a Partner</a>
+            <div class="col-md-6">
+               <div class="box1" data-aos="fade-right" data-aos-duration="1000">
+                  <img
+                     src="https://static.wixstatic.com/media/801386_9172f4e39b404c7f86200d7cb9fda3e8~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01/adaptv_sd_wan.webp"
+                     class="img-fluid">
                </div>
             </div>
-         </section>
-         <section class="sec8 container">
-            <h2>Get in Touch!</h2>
-            <h4 class="title">We would love to chat with you about<br>the future of your business network</h4>
-            <div class="row justify-content-center m-0">
-               <div class="col-md-3 p-0">
-                  <div class="box" data-aos="fade-left"  data-aos-duration="1000">
-                     <i class="far fa-paper-plane text-dark"></i>
-                     <a href="#">
-                        <h6 class="text-dark">sales@adaptiv-networks.com</h6>
-                     </a>
-                     <img src="https://static.wixstatic.com/media/801386_ca6c224be8424d3da85cb797926944c8~mv2.jpg/v1/fill/w_334,h_327,al_c,q_80,usm_0.66_1.00_0.01/801386_ca6c224be8424d3da85cb797926944c8~mv2.webp" class="img-fluid" alt="">
-                     <div class="overlay1">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3 p-0">
-                  <div class="box" data-aos="fade-up"  data-aos-duration="1000">
-                     <i class="fas fa-mobile text-dark"></i>
-                     <a href="#">
-                        <h6 class="text-dark">+1&nbsp;416-203-7838</h6>
-                     </a>
-                     <img src="https://static.wixstatic.com/media/801386_b57870aac8a84e5297c03dadc0148569~mv2.jpg/v1/crop/x_89,y_3,w_323,h_327,q_80/801386_b57870aac8a84e5297c03dadc0148569~mv2.webp" class="img-fluid" alt="">
-                     <div class="overlay2">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3 p-0">
-                  <div class="box" data-aos="fade-right"  data-aos-duration="1000">
-                     <i class="fab fa-twitter"></i>
-                     <a href="#">
-                        <h6 class="text-dark">Find us on Twitter</h6>
-                     </a>
-                     <img src="https://static.wixstatic.com/media/801386_18e5ee688d104b5bba897297cb9d506a~mv2.jpeg/v1/crop/x_89,y_3,w_323,h_327,q_80/801386_18e5ee688d104b5bba897297cb9d506a~mv2.webp" class="img-fluid" alt="">
-                     <div class="overlay3">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <section class="request_demo aos-init aos-animate" data-aos="zoom-in-down" data-aos-duration="2000" id="contact">
-            <div class="">
-               <div class="row m-0 inner_div">
-                  <div class="col-md-6 p-0">
-                     <div class="img_div">
-                        <img src="https://static.wixstatic.com/media/801386_89a1dfc1a6af4f7cbba2c4dc08f52e5f~mv2.jpg/v1/fill/w_1022,h_663,al_c,q_85,usm_0.66_1.00_0.01/801386_89a1dfc1a6af4f7cbba2c4dc08f52e5f~mv2.webp" alt="iStock-1001611380.jpg" class="img-fluid">
-                     </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-4">
-                     <h1 class="title">Request Demo</h1>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <input type="text" class="form-control" id="validationDefault01" placeholder="First Name" required="">
-                        </div>
-                        <div class="col-md-6">
-                           <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name" required="">
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-md-6">
-                           <input type="text" class="form-control" id="validationDefault03" placeholder="Email" required="">
-                        </div>
-                        <div class="col-md-6">
-                           <input type="text" class="form-control" id="validationDefault03" placeholder="Country" required="">
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="form-control" id="validationDefault05" placeholder="Type your message here..." required=""></textarea>
-                        </div>
-                     </div>
-                     <button class="btn bttn send" type="submit">Send Message</button>
-                  </div>
-                  <div class="col-md-1"></div>
-               </div>
-            </div>
-         </section>
-         <section class="footer">
-            <div class="container">
-               <div class="row mb-5 justify-content-center">
-                  <div class="col-md-3">
-                     <div>
-                        <h3>Stay Connected</h3>
-                     </div>
-                     <p style="width: 80%;">Follow us on social media to stay up to date on our latest news, events, press releases and content offers</p>
-                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div>
-                        <h3>Agile Cloud Connectivity</h3>
-                     </div>
-                     <p style="width: 80%;">We remove barriers to business digital transformation with amazingly simple and effective cloud connectivity</p>
-                     <button type="button" class="btn bttn">Book A Demo</button>
-                  </div>
-                  <div class="col-md-2">
-                     <div class="links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Home</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">About Us</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Services</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Blog</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Contact Us</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 ps-lg-5">
-                     <div class="links">
-                        <h3>Our Services</h3>
-                        <ul>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Business Growth</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">AbouFinance Division</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Insurance &amp; Planning</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Digital Consultancy</a></li>
-                           <li><i class="fas fa-angle-right"></i><a href="#">Online Support</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="row mt-5 mb-2">
-                  <div class="col-md-2">
-                     <div class="bottom_div">
-                        <img src="assets/images/logo-white.png" class="img-fluid bottom_logo">
-                     </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-9">
-                     <div class="bottom_links">
-                        <li class="mx-3"><a href="#">TERMS OF USE</a></li>
-                        <li class="mx-3"><a href="#">ANTI SPAM</a></li>
-                        <li class="mx-3"><a href="#">PRIVACY POLICY</a></li>
-                        <li class="mx-3"><a href="#">AODA</a></li>
-                        <li class="mx-3"><a href="#">USER LICENSE AGREEMENT</a></li>
-                        <li class="mx-3"><a href="#">PATENTS</a></li>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="text-center border-top pt-4">
-               <h6>Copyright © 2021 Adaptiv Networks, Inc. </h6>
-            </div>
-         </section>
+         </div>
       </section>
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="assets/js/jquery-3.6.0.min.js" ></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="assets/js/custom.js"></script>
-      <script>
-         AOS.init();
-         
-         $(window).scroll(function() {
+     
+      <section class="request_demo aos-init aos-animate" id="contact">
+         <div class="overlay"></div>
+         <div class="">
+
+            <div class="row m-0 inner_div">
+               <!-- <div class="col-md-6 p-0">
+                     <div class="img_div">
+                        <img src="" alt="iStock-1001611380.jpg" class="img-fluid">
+                     </div>
+                  </div> -->
+               <div class="col-md-1"></div>
+               <div class="col-md-4 " data-aos="zoom-in-down" data-aos-duration="2000">
+                  <h1 class="title text-white">Send a Message & Get in touch!</h1>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First Name"
+                           required="">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name"
+                           required="">
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6">
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="Email"
+                           required="">
+                     </div>
+                     <div class="col-md-6">
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="Country"
+                           required="">
+                     </div>
+                     <div class="col-md-12">
+                        <textarea class="form-control" id="validationDefault05" placeholder="Type your message here..."
+                           required=""></textarea>
+                     </div>
+                  </div>
+                  <button class="btn bttn send" type="submit">Send Message</button>
+               </div>
+               <div class="col-md-1"></div>
+            </div>
+         </div>
+      </section>
+
+
+      <section class="latest_news container">
+         <div class="text-center">
+            <h3 class="text-center mb-5 fs-2 fs-lg-3">Latest News</h3>
+         </div>
+         <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="box mx-3 my-2">
+               <div class="background-white pb-4 h-100 radius-secondary">
+                  <img class="radius-tr-secondary radius-tl-secondary" style="height: 200px;"
+                     src="https://thumbs.dreamstime.com/b/teletype-network-protocol-telnet-virtual-terminal-client-internet-concept-145323471.jpg"
+                     alt="Featured Image">
+                  <div class="px-4 pt-4" data-zanim-timeline="{}">
+                     <div class="overflow-hidden">
+                        <a href="news.html">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum</h5>
+                        </a>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">By Paul O'Sullivan</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="mt-2 text-dark" data-zanim="{&quot;delay&quot;:0.2}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of
+                           the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                           text ever since the 1500s,</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <div class="d-inline-block" data-zanim="{&quot;delay&quot;:0.3}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                           <a class="d-flex t-green align-items-center" href="#">
+                              Learn More
+                              <div class="ms-2 overflow-hidden ml-2"
+                                 data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                 style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                                    class="d-inline-block">⟶</span></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="box mx-3 my-2">
+               <div class="background-white pb-4 h-100 radius-secondary">
+                  <img class="radius-tr-secondary radius-tl-secondary" style="height: 200px;"
+                     src="https://thumbs.dreamstime.com/b/achieve-business-excellence-as-concept-pursuit-excellence-blurred-business-center-background-achieve-business-excellence-as-149954509.jpg"
+                     alt="Featured Image">
+                  <div class="px-4 pt-4" data-zanim-timeline="{}">
+                     <div class="overflow-hidden">
+                        <a href="news.html">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum </h5>
+                        </a>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">By Paul O'Sullivan</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="mt-2 text-dark" data-zanim="{&quot;delay&quot;:0.2}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of
+                           the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                           text ever since the 1500s,</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <div class="d-inline-block" data-zanim="{&quot;delay&quot;:0.3}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                           <a class="d-flex t-green align-items-center" href="#">
+                              Learn More
+                              <div class="ms-2 overflow-hidden ml-2"
+                                 data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                 style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                                    class="d-inline-block">⟶</span></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box mx-3 my-2">
+               <div class="background-white pb-4 h-100 radius-secondary">
+                  <img class="radius-tr-secondary radius-tl-secondary" style="height: 200px;"
+                     src="https://thumbs.dreamstime.com/b/pr-public-relations-concept-communication-advertising-marketing-strategy-209188850.jpg"
+                     alt="Featured Image">
+                  <div class="px-4 pt-4" data-zanim-timeline="{}">
+                     <div class="overflow-hidden">
+                        <a href="news.html">
+                           <h5 class="t-blue" data-zanim="{&quot;delay&quot;:0}"
+                              style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum </h5>
+                        </a>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="t-gray" data-zanim="{&quot;delay&quot;:0.1}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">By Paul O'Sullivan</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <p class="mt-2 text-dark" data-zanim="{&quot;delay&quot;:0.2}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Lorem Ipsum is simply dummy text of
+                           the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                           text ever since the 1500s,</p>
+                     </div>
+                     <div class="overflow-hidden">
+                        <div class="d-inline-block" data-zanim="{&quot;delay&quot;:0.3}"
+                           style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                           <a class="d-flex t-green align-items-center" href="#">
+                              Learn More
+                              <div class="ms-2 overflow-hidden ml-2"
+                                 data-zanim="{&quot;from&quot;:{&quot;opacity&quot;:0,&quot;x&quot;:-30},&quot;to&quot;:{&quot;opacity&quot;:1,&quot;x&quot;:0},&quot;delay&quot;:0.8}"
+                                 style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><span
+                                    class="d-inline-block">⟶</span></div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+
+      </section>
+
+
+
+
+      <section class="footer">
+         <div class="container">
+            <div class="row mb-5 justify-content-center">
+               <div class="col-md-3">
+                  <div>
+                     <h3>Stay Connected</h3>
+                  </div>
+                  <p style="width: 80%;">Follow us on social media to stay up to date on our latest news, events, press
+                     releases and content offers</p>
+                  <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+               </div>
+
+               <div class="col-md-2">
+                  <div class="links">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Home</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">About Us</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Services</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Blog</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-3 ps-lg-5">
+                  <div class="links">
+                     <h3>Our Services</h3>
+                     <ul>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Business Growth</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">AbouFinance Division</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Insurance &amp; Planning</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Digital Consultancy</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#">Online Support</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div>
+                     <h3>Have a Questions?</h3>
+                  </div>
+                  <div class="block-23 mb-3">
+                     <ul>
+                        <li><span class="icon fa text-white fa-map marker me-2"></span><span class="text-white text">203
+                              Fake St. Mountain View, San Francisco, California, USA</span></li>
+                        <li><a href="#"><span class="icon fas fa-phone-alt me-2"></span><span class="text">+2 392 3929
+                                 210</span></a></li>
+                        <li><a href="#"><span class="icon fa fa-paper-plane me-2"></span><span
+                                 class="text">info@yourdomain.com</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-5 mb-2">
+               <div class="col-md-2">
+                  <div class="bottom_div">
+                     <img src="assets/images/logo-white.png" class="img-fluid bottom_logo">
+                  </div>
+               </div>
+               <div class="col-md-1"></div>
+               <div class="col-md-9">
+                  <div class="bottom_links">
+                     <li class="mx-3"><a href="#">TERMS OF USE</a></li>
+                     <li class="mx-3"><a href="#">ANTI SPAM</a></li>
+                     <li class="mx-3"><a href="#">PRIVACY POLICY</a></li>
+                     <li class="mx-3"><a href="#">AODA</a></li>
+                     <li class="mx-3"><a href="#">USER LICENSE AGREEMENT</a></li>
+                     <li class="mx-3"><a href="#">PATENTS</a></li>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="text-center border-top pt-4">
+            <h6>Copyright © 2021 easyWAN. </h6>
+         </div>
+      </section>
+   </section>
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="assets/js/custom.js"></script>
+   <script>
+      AOS.init();
+
+      $(window).scroll(function () {
          if ($(document).scrollTop() > 50) {
-         $('nav').addClass('shrink');
-         
+            $('nav').addClass('shrink');
+
          } else {
-         $('nav').removeClass('shrink');
-         
-         
+            $('nav').removeClass('shrink');
+
+
          }
-         });
-         
-      </script>
-   </body>
+      });
+
+      $('.owl-carousel1').owlCarousel({
+         loop: true,
+         margin: 10,
+         autoplay: true,
+         dots: true,
+         center: true,
+         autoplayTimeout: 3000,
+         autoplayHoverPause: true,
+         nav: false,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 2
+            },
+            1000: {
+               items: 3
+            }
+         }
+      })
+
+      $('.owl-carousel2').owlCarousel({
+         loop: true,
+         margin: 10,
+         autoplay: true,
+         dots: false,
+         center: true,
+         autoplayTimeout: 3000,
+         autoplayHoverPause: true,
+         nav: false,
+         responsive: {
+            0: {
+               items: 1
+            },
+            600: {
+               items: 2
+            },
+            1000: {
+               items: 3
+            }
+         }
+      })
+
+   </script>
+</body>
+
 </html>
 <!-- 
    <section class="container">

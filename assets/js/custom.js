@@ -250,7 +250,7 @@ function onScrollAnimation(){
                 /*end*/
 
 
-            var $home_section_5 = $(".our_mission");
+            var $home_section_5 = $(".scroll_anim");
             if ($home_section_5.length){
                 var window_offset = $home_section_5.offset().top + 200;
                  if (window_offset <= window_top_position) {
